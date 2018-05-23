@@ -1,0 +1,1812 @@
+
+
+[INFO ] 2018-05-20 23:07:34,537 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-20 23:07:34,619 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sun May 20 23:07:34 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-20 23:07:34,665 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-20 23:07:34,864 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-20 23:07:34,940 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-20 23:07:35,009 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-20 23:07:35,243 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-20 23:07:35,244 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-20 23:07:35,244 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-20 23:07:35,255 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-20 23:07:35,845 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-20 23:07:36,571 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:36,688 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:36,688 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7048&side=provider&timeout=3000000&timestamp=1526828856596, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:36,689 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7048&side=provider&timeout=3000000&timestamp=1526828856596 to registry registry://192.168.137.150:9090/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=7048&registry=zookeeper&timestamp=1526828856583, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:36,977 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:37,005 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:07:37,027 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-20 23:07:37,037 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-20 23:07:37,037 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-20 23:07:37,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-20 23:07:37,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-20 23:07:37,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-20 23:07:37,038 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-20 23:07:37,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-20 23:07:37,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-20 23:07:37,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-20 23:07:37,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-20 23:07:37,039 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-20 23:07:37,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-20 23:07:37,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-20 23:07:37,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-20 23:07:37,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-20 23:07:37,041 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:9090 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@249d84
+  
+
+[INFO ] 2018-05-20 23:07:37,062 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:38,066 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:39,174 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:40,174 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:41,308 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:42,311 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:43,412 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:44,408 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:45,509 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:46,510 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:47,611 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:07:48,608 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:07:49,712 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:9090. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-20 23:17:24,312 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-20 23:17:24,409 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sun May 20 23:17:24 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-20 23:17:24,480 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-20 23:17:24,731 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-20 23:17:24,803 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-20 23:17:24,886 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-20 23:17:25,168 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-20 23:17:25,169 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-20 23:17:25,169 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-20 23:17:25,185 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-20 23:17:26,017 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-20 23:17:27,041 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:17:27,187 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:17:27,187 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9284&side=provider&timeout=3000000&timestamp=1526829447076, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:17:27,187 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9284&side=provider&timeout=3000000&timestamp=1526829447076 to registry registry://192.168.13.128:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=9284&registry=zookeeper&timestamp=1526829447053, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:17:27,509 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:17:27,548 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-20 23:17:27,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-20 23:17:27,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-20 23:17:27,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-20 23:17:27,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-20 23:17:27,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-20 23:17:27,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-20 23:17:27,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-20 23:17:27,564 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-20 23:17:27,564 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-20 23:17:27,564 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-20 23:17:27,564 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-20 23:17:27,564 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-20 23:17:27,565 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-20 23:17:27,565 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-20 23:17:27,565 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-20 23:17:27,567 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.13.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@785d51c9
+  
+
+[INFO ] 2018-05-20 23:17:27,597 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.13.128/192.168.13.128:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-20 23:17:48,596 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-20 23:17:49,709 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.13.128/192.168.13.128:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-20 23:19:26,062 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-20 23:19:26,174 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sun May 20 23:19:26 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-20 23:19:26,231 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-20 23:19:26,445 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-20 23:19:26,524 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-20 23:19:26,598 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-20 23:19:26,825 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-20 23:19:26,826 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-20 23:19:26,826 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-20 23:19:26,838 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-20 23:19:27,509 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-20 23:19:28,663 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:28,771 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:28,772 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:28,772 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=8280&registry=zookeeper&timestamp=1526829568673, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:28,968 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:29,014 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:29,031 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-20 23:19:29,040 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-20 23:19:29,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-20 23:19:29,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-20 23:19:29,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-20 23:19:29,041 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-20 23:19:29,042 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-20 23:19:29,043 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-20 23:19:29,043 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-20 23:19:29,043 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-20 23:19:29,044 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7d3a3701
+  
+
+[INFO ] 2018-05-20 23:19:29,064 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-20 23:19:29,065 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-20 23:19:29,243 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-20 23:19:29,243 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd300004, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-20 23:19:29,246 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-20 23:19:29,250 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:29,329 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:29,369 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:19:29,394 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 3330 ms
+  
+
+[INFO ] 2018-05-20 23:21:04,181 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-20 23:21:04,263 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sun May 20 23:21:04 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-20 23:21:04,304 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-20 23:21:04,471 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-20 23:21:04,537 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-20 23:21:04,598 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-20 23:21:04,799 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-20 23:21:04,800 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-20 23:21:04,800 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-20 23:21:04,811 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-20 23:21:05,418 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-20 23:21:06,135 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,240 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,240 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,240 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=7512&registry=zookeeper&timestamp=1526829666146, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,513 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,534 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216, com.suqc.api.DictCityService=empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,550 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-20 23:21:06,561 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-20 23:21:06,561 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-20 23:21:06,561 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-20 23:21:06,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-20 23:21:06,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-20 23:21:06,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-20 23:21:06,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-20 23:21:06,563 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-20 23:21:06,564 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@19deb07
+  
+
+[INFO ] 2018-05-20 23:21:06,585 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-20 23:21:06,587 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-20 23:21:06,676 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-20 23:21:06,676 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd300005, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-20 23:21:06,679 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-20 23:21:06,682 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,717 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,741 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-20 23:21:06,783 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 2601 ms
+  
+
+[INFO ] 2018-05-22 23:26:10,681 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-22 23:26:10,849 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 22 23:26:10 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-22 23:26:10,894 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-22 23:26:11,063 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-22 23:26:11,143 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-22 23:26:11,204 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-22 23:26:11,431 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-22 23:26:11,432 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-22 23:26:11,433 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-22 23:26:11,448 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-22 23:26:12,344 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-22 23:26:13,142 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,262 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,262 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,263 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=5292&registry=zookeeper&timestamp=1527002773155, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,575 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,600 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.suqc.api.DictCityService=empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,618 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-22 23:26:13,627 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-22 23:26:13,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-22 23:26:13,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-22 23:26:13,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-22 23:26:13,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-22 23:26:13,628 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-22 23:26:13,629 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-22 23:26:13,630 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-22 23:26:13,630 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-22 23:26:13,631 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@68c0fe1e
+  
+
+[INFO ] 2018-05-22 23:26:13,653 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-22 23:26:13,654 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-22 23:26:13,751 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-22 23:26:13,752 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd300006, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-22 23:26:13,758 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-22 23:26:13,763 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,894 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,944 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:26:13,978 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 3222 ms
+  
+
+[INFO ] 2018-05-22 23:30:58,712 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-22 23:30:58,791 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 22 23:30:58 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-22 23:30:58,832 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-22 23:30:59,033 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-22 23:30:59,093 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-22 23:30:59,160 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-22 23:30:59,403 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-22 23:30:59,403 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-22 23:30:59,404 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-22 23:30:59,413 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-22 23:31:00,059 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-22 23:31:00,759 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:00,858 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:00,858 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:00,858 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=8448&registry=zookeeper&timestamp=1527003060768, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,126 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,144 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.suqc.api.DictCityService=dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=configurators&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9396&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003019247 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=routers&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9396&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003019247, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,161 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-22 23:31:01,192 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-22 23:31:01,193 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-22 23:31:01,193 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-22 23:31:01,193 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-22 23:31:01,193 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-22 23:31:01,194 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-22 23:31:01,195 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-22 23:31:01,195 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-22 23:31:01,196 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@45c5f96e
+  
+
+[INFO ] 2018-05-22 23:31:01,216 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-22 23:31:01,217 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-22 23:31:01,227 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-22 23:31:01,227 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd300008, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-22 23:31:01,229 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-22 23:31:01,231 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,257 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,274 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:31:01,304 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 2590 ms
+  
+
+[WARN ] 2018-05-22 23:33:17,318 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.56.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:33:17,322 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:53990,url:dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[WARN ] 2018-05-22 23:37:10,040 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.56.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:37:10,041 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:54108,url:dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[WARN ] 2018-05-22 23:45:11,402 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x162a765dd300008
+  
+
+[INFO ] 2018-05-22 23:45:11,403 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x162a765dd300008, closing socket connection and attempting reconnect
+  
+
+[INFO ] 2018-05-22 23:45:11,618 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+  
+
+[INFO ] 2018-05-22 23:45:13,112 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-22 23:45:39,729 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x162a765dd300008 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-22 23:45:41,672 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-22 23:46:02,674 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x162a765dd300008 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-22 23:46:04,592 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-22 23:46:07,568 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.56.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:07,569 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:54213,url:dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:30,953 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-22 23:46:31,043 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 22 23:46:31 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-22 23:46:31,093 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-22 23:46:31,262 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-22 23:46:31,335 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-22 23:46:31,399 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-22 23:46:31,591 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-22 23:46:31,592 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-22 23:46:31,592 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-22 23:46:31,602 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-22 23:46:32,226 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-22 23:46:33,017 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,135 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,136 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6288&side=provider&timeout=3000000&timestamp=1527003993044, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,136 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6288&side=provider&timeout=3000000&timestamp=1527003993044 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=6288&registry=zookeeper&timestamp=1527003993028, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,435 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,461 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216, com.suqc.api.DictCityService=dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=configurators&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7816&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003442561 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=routers&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7816&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003442561}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:46:33,481 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-22 23:46:33,490 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-22 23:46:33,491 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-22 23:46:33,491 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-22 23:46:33,491 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-22 23:46:33,491 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-22 23:46:33,491 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-22 23:46:33,492 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-22 23:46:33,493 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-22 23:46:33,493 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-22 23:46:33,494 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3f3915ea
+  
+
+[INFO ] 2018-05-22 23:46:33,515 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-22 23:46:54,524 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-22 23:46:55,630 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[WARN ] 2018-05-22 23:47:16,637 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+  java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-05-22 23:47:17,738 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-22 23:49:46,162 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-22 23:49:46,269 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 22 23:49:46 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-22 23:49:46,327 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-22 23:49:46,545 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-22 23:49:46,616 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-22 23:49:46,674 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-22 23:49:46,917 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-22 23:49:46,918 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-22 23:49:46,918 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-22 23:49:46,928 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-22 23:49:47,579 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-22 23:49:48,300 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,422 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,423 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,423 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=6104&registry=zookeeper&timestamp=1527004188311, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,685 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,715 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216, com.suqc.api.DictCityService=dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=configurators&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7816&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003442561 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=routers&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7816&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527003442561}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,733 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-22 23:49:48,743 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-22 23:49:48,744 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-22 23:49:48,744 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-22 23:49:48,744 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-22 23:49:48,744 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-22 23:49:48,745 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-22 23:49:48,746 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-22 23:49:48,746 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-22 23:49:48,746 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-22 23:49:48,747 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6544b834
+  
+
+[INFO ] 2018-05-22 23:49:48,770 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-22 23:49:48,772 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-22 23:49:48,781 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-22 23:49:48,781 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd30000c, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-22 23:49:48,783 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-22 23:49:48,786 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,814 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,841 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:49:48,873 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 2708 ms
+  
+
+[INFO ] 2018-05-22 23:51:57,630 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-22 23:51:57,902 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 22 23:51:57 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-22 23:51:58,091 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-22 23:51:58,659 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-22 23:51:58,784 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-22 23:51:58,894 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-22 23:51:59,416 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-22 23:51:59,417 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-22 23:51:59,417 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-22 23:51:59,432 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-22 23:52:00,402 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-22 23:52:01,552 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:01,696 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:01,696 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:01,696 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=10340&registry=zookeeper&timestamp=1527004321565, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:01,997 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:02,022 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216, com.suqc.api.DictCityService=dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=configurators&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527004208169 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=routers&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=9220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527004208169}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:02,050 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-22 23:52:02,065 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-22 23:52:02,066 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-22 23:52:02,066 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-22 23:52:02,066 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-22 23:52:02,066 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-22 23:52:02,067 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-22 23:52:02,067 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-22 23:52:02,067 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-22 23:52:02,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-22 23:52:02,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-22 23:52:02,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-22 23:52:02,068 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-22 23:52:02,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-22 23:52:02,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-22 23:52:02,069 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-22 23:52:02,071 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3aa8d63a
+  
+
+[INFO ] 2018-05-22 23:52:02,097 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-22 23:52:02,099 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-22 23:52:02,108 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-22 23:52:02,109 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd30000e, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-22 23:52:02,111 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-22 23:52:02,113 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:02,142 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:02,220 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:02,263 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 4585 ms
+  
+
+[WARN ] 2018-05-22 23:52:24,002 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.56.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-22 23:52:24,007 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.56.1:55107,url:dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:33,570 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+  
+
+[INFO ] 2018-05-23 21:51:33,653 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Wed May 23 21:51:33 CST 2018]; root of context hierarchy
+  
+
+[INFO ] 2018-05-23 21:51:33,694 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-core.xml]
+  
+
+[INFO ] 2018-05-23 21:51:33,858 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-mybatis.xml]
+  
+
+[INFO ] 2018-05-23 21:51:33,912 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\spring\spring-service.xml]
+  
+
+[INFO ] 2018-05-23 21:51:33,981 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+  
+
+[INFO ] 2018-05-23 21:51:34,196 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\activemq.properties]
+  
+
+[INFO ] 2018-05-23 21:51:34,196 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\jdbc.properties]
+  
+
+[INFO ] 2018-05-23 21:51:34,196 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\cnki\workspace\sums-parent\sums-manager\sums-manager-service\target\classes\properties\redis.properties]
+  
+
+[INFO ] 2018-05-23 21:51:34,206 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+  
+
+[INFO ] 2018-05-23 21:51:34,805 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+  
+
+[INFO ] 2018-05-23 21:51:35,532 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.suqc.api.DictCityService, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:35,641 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:35,641 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.suqc.api.DictCityService to url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:35,642 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.suqc.api.DictCityService url dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557 to registry registry://192.168.137.150:2181/com.alibaba.dubbo.registry.RegistryService?application=ssm-manager-service&dubbo=2.5.3&pid=8316&registry=zookeeper&timestamp=1527083495544, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:35,938 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:35,976 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\suqc\.dubbo\dubbo-registry-192.168.137.150.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 empty://192.168.56.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457725446 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2592&side=provider&timeout=300000&timestamp=1516457573324, com.taotao.sso.service.UserService=empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 empty://192.168.56.1/com.taotao.sso.service.UserService?application=taotao-sso-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=8652&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1515316299993 dubbo://192.168.56.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso-web&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=logout,getUserByToken,login,checkUserData,register&pid=7364&side=provider&timeout=300000&timestamp=1515315121144, com.taotao.search.service.SearchService=empty://192.168.56.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=4112&side=provider&timeout=300000&timestamp=1516457702347, com.taotao.service.ItemCatService=empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 empty://192.168.56.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737750 dubbo://192.168.56.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=3188&side=provider&timeout=300000&timestamp=1516457356450, com.taotao.service.ItemService=empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 empty://192.168.56.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457737976 dubbo://192.168.56.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,createItem,getItemById,getItemDescById&pid=3188&side=provider&timeout=300000&timestamp=1516457355874, com.taotao.content.service.ContentService=empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 empty://192.168.56.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContentListByCid,getContent,addContent,updateContent,deleteContent&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457730762 dubbo://192.168.56.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentListByCid,getContentList,getContent,addContent,updateContent,deleteContent&pid=2592&side=provider&timeout=300000&timestamp=1516457573932, com.suqc.api.DictCityService=dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=10340&side=provider&timeout=3000000&timestamp=1527004321580 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8448&side=provider&timeout=3000000&timestamp=1527003060780 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=5292&side=provider&timeout=3000000&timestamp=1527002773177 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=7512&side=provider&timeout=3000000&timestamp=1526829666160 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=6104&side=provider&timeout=3000000&timestamp=1527004188324 dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8280&side=provider&timeout=3000000&timestamp=1526829568688 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=configurators&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8556&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527004356969 empty://192.168.56.1/com.suqc.api.DictCityService?application=ssm-manager-service&category=routers&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8556&revision=1.0-SNAPSHOT&side=consumer&timestamp=1527004356969, com.taotao.search.service.SearchItemService=empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 empty://192.168.56.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=1324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1516457733571 dubbo://192.168.56.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=4112&side=provider&timeout=300000&timestamp=1516457701216}, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:36,001 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+  
+
+[INFO ] 2018-05-23 21:51:36,019 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+  
+
+[INFO ] 2018-05-23 21:51:36,019 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-SUQC
+  
+
+[INFO ] 2018-05-23 21:51:36,020 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_75
+  
+
+[INFO ] 2018-05-23 21:51:36,020 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+  
+
+[INFO ] 2018-05-23 21:51:36,020 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.7.0_75\jre
+  
+
+[INFO ] 2018-05-23 21:51:36,020 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.2\lib\idea_rt.jar
+  
+
+[INFO ] 2018-05-23 21:51:36,021 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.7.0_75\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\Tools\Binn\;D:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\VisualSVN Server\work\bin;E:\android-sdks\platform-tools;D:\Program Files (x86)\apache-maven-3.5.0\bin;.
+  
+
+[INFO ] 2018-05-23 21:51:36,021 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\suqc\AppData\Local\Temp\
+  
+
+[INFO ] 2018-05-23 21:51:36,021 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+  
+
+[INFO ] 2018-05-23 21:51:36,021 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+  
+
+[INFO ] 2018-05-23 21:51:36,021 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+  
+
+[INFO ] 2018-05-23 21:51:36,022 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+  
+
+[INFO ] 2018-05-23 21:51:36,022 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=suqc
+  
+
+[INFO ] 2018-05-23 21:51:36,022 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\suqc
+  
+
+[INFO ] 2018-05-23 21:51:36,022 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\cnki\workspace\sums-parent\sums-manager
+  
+
+[INFO ] 2018-05-23 21:51:36,024 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.137.150:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4a0306a0
+  
+
+[INFO ] 2018-05-23 21:51:36,060 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.137.150/192.168.137.150:2181. Will not attempt to authenticate using SASL (unknown error)
+  
+
+[INFO ] 2018-05-23 21:51:36,065 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.137.150/192.168.137.150:2181, initiating session
+  
+
+[WARN ] 2018-05-23 21:51:36,080 method:org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:139)
+Connected to an old server; r-o mode will be unavailable
+  
+
+[INFO ] 2018-05-23 21:51:36,080 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.137.150/192.168.137.150:2181, sessionid = 0x162a765dd300010, negotiated timeout = 30000
+  
+
+[INFO ] 2018-05-23 21:51:36,089 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+  
+
+[INFO ] 2018-05-23 21:51:36,092 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:36,137 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557, dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:36,166 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557, urls: [empty://192.168.56.1:20880/com.suqc.api.DictCityService?anyhost=true&application=ssm-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.suqc.api.DictCityService&methods=getDictMap,getAll&pid=8316&side=provider&timeout=3000000&timestamp=1527083495557], dubbo version: 2.5.3, current host: 127.0.0.1
+  
+
+[INFO ] 2018-05-23 21:51:36,221 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 2650 ms
+  
